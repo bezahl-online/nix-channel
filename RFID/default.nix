@@ -27,7 +27,7 @@ buildGoModule {
   };
   # src = ../RFID/.;
  
-  vendorSha256 = "sha256-GNZhzOp4orMBgJXIozOsswZXn7QR/ji1NFYwLFiw/3c=";
+  vendorSha256 = null;
 
   buildPhase = ''
     runHook preBuild
