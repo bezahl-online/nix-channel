@@ -22,8 +22,8 @@ buildGoModule {
   src = fetchFromGitHub {
     owner = "bezahl-online";
     repo = repo;
-    rev = "c4e06b0a215559e70ae77e0b3222428c2ea32e89";
-    sha256 = "sha256-svWt11myC4QcHrO3uajau2FMC1iywA50aQzR2ma+dWk=";
+    rev = "174899d4c6f945a97ffc7ba782603bf1abae1463";
+    sha256 = "sha256-LTkuBYTH7v6Y9LXRNKN0CmiCjbHnDMUqxSTG5AK80Gw=";
   };
   # src = ../RFID/.;
  
