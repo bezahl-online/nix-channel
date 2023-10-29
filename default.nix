@@ -5,7 +5,7 @@ let
   
   # Import your packages
   ptapi = import ./ptapi { inherit sources; };
-  RFID = import ./RFID { inherit sources; };
+  RFID = import ./RFID { inherit lib; };
 # And return that specific nixpkgs
 in  {
   inherit ptapi RFID;
