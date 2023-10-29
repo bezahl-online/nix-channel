@@ -1,5 +1,5 @@
 let
-  sources = imports ./nix/sources.nix;
+  sources = import ./nix/sources.nix;
 
   hello = pkgs.writeShellScriptBin "hello" ''
     echo "Hello from the Nix channel overlay!"
