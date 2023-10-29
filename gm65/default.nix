@@ -27,7 +27,7 @@ buildGoModule {
   };
   # src = ../gm65/.;
  
-  vendorSha256 = "sha256-GoJ2XMiml03UCi7Ow09pXPbc960n+w1nmhdOAAthoR8=";
+  vendorSha256 = null;
 
   buildPhase = ''
     runHook preBuild
