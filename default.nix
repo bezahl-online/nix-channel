@@ -2,12 +2,19 @@ let
   # Import sources
   sources = import ./nix/sources.nix;
   pkgs = import sources.nixpkgs { };
-  
+
   # Import your packages
   ptapi = import ./ptapi { inherit sources; };
-  RFID = import ./RFID { inherit (pkgs) lib; };
-# And return that specific nixpkgs
-in  {
+  RFID = import ./RFID {
+    inherit (pkgs) lib;
+    inherit (pkgs) buildGoModule;
+    inherit (pkgs) fetchFromGitHub;
+    inherit (pkgs) nixosTests;
+    inherit (pkgs) testers;
+    inherit (pkgs) installShellFiles;
+  };
+  # And return that specific nixpkgs
+in {
   inherit ptapi RFID;
 }
 
