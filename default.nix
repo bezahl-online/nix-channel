@@ -3,7 +3,7 @@ let
   sources = import ./nix/sources.nix;
   pkgs = import sources.nixpkgs { };
 
-  callPackage ./ptapi {}
+  pkgs.callPackage ./ptapi {}
   # Import your packages
   RFID = import ./RFID {
     inherit (pkgs) lib;
