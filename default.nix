@@ -4,7 +4,7 @@ let
   pkgs = import sources.nixpkgs { };
 
   ptapi = pkgs.callPackage ./ptapi { };
-  RFID = pkgs.callPackage ./RFID { };
+  rfid = pkgs.callPackage ./RFID { };
   printapi = pkgs.callPackage ./printapi { };
   gm65 = pkgs.callPackage ./gm65 { };
   register = pkgs.callPackage ./register-tauri { };
